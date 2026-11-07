@@ -6,13 +6,9 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import androidx.room3.Room
-import androidx.sqlite.driver.AndroidSQLiteDriver
 import com.example.database.data.AppDataBase
-import com.example.database.data.User
+import com.example.database.data.users.dao.entity.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -59,4 +55,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-

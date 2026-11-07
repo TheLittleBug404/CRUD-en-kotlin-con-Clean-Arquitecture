@@ -1,9 +1,10 @@
-package com.example.database.data
+package com.example.database.data.users.dao.UserDao
 import androidx.room3.Dao
 import androidx.room3.Delete
 import androidx.room3.Insert
 import androidx.room3.Query
 import androidx.room3.Update
+import com.example.database.data.users.dao.entity.User
 
 @Dao
 //EN ACA COLOCAREMOS EL SELECT EL INSERT UPDATE Y DELETE
@@ -19,5 +20,4 @@ interface UserDao {
 
     @Update
     suspend fun actualizarUser(user: User)
-
 }
