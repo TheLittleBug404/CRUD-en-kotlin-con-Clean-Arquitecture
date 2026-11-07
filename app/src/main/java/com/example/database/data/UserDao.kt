@@ -11,13 +11,13 @@ interface UserDao {
     @Query("SELECT * FROM users")
     suspend fun getAll(): List<User>
 
-    @Insert
+    @Insert//esto es el insert en base de datos
     suspend fun insertarUsuario(user: User)
 
     @Delete
-    suspend fun deleteUser(user: User)
+    suspend fun eliminarUser(user: User)
 
     @Update
-    suspend fun updateUser(user: User)
+    suspend fun actualizarUser(user: User)
 
 }
